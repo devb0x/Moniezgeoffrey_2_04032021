@@ -13,12 +13,21 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.blue-text {
+  color: #0065FC;
+}
+
 header {
-  border: 1px solid;
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   margin: auto;
+  padding-top: 30px;
 }
 
 .logo {
@@ -29,13 +38,87 @@ nav {
   flex-basis: 100%;
 }
 
+nav > ul {
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
 .login {
   display: flex;
   margin: auto 0 auto auto;
 }
 
 .login > a {
-  color: #0065FC;
-  text-decoration: none;
   font-weight: 600;
 }
+
+@media all and (min-width: 768px){
+  nav {
+    order: 1;
+    flex-basis: 33%;
+    margin: auto 1rem auto auto;
+  }
+
+  nav > ul {
+    justify-content: space-evenly;
+  }
+
+  .login {
+    order: 2;
+    margin: auto 0 auto;
+  }
+}
+
+/* end header */
+
+/* start section .search */
+
+.search {
+  width: 90%;
+  margin: auto;
+}
+
+.search-title > h1 {
+  font-size: 1.375rem;
+}
+
+.search-field {
+  position: relative;
+}
+
+.search-field input {
+  width: 90%;
+  height: 49px;
+  margin-left: 5%;
+  border: 1px solid #f0f0f0;
+  border-right: none;
+  border-left: none;
+  padding-left: 3.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.search-field input:focus {
+  outline: none;
+}
+
+.fa-map-marker-alt {
+  position: absolute;
+  left: 0;
+  font-size: 1.125rem;
+  background-color: #f0f0f0;
+  padding: 16px 20px;
+  border-radius: 10px 0 0 10px;
+}
+
+.fa-search {
+  position: absolute;
+  right: 0;
+  font-size: 1.125rem;
+  background-color: #0065FC;
+  padding: 16px;
+  border-radius: 10px;
+}
+
