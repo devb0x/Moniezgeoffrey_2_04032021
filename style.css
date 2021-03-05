@@ -32,8 +32,12 @@ a {
   color: black;
 }
 
-.blue-text {
+.blue {
   color: #0065FC;
+}
+
+.grey {
+  color: #D9D9D9;
 }
 
 header {
@@ -173,6 +177,12 @@ nav > ul {
   border-radius: 2rem;
   border-left: none;
   margin: 5px 5px 5px 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.badge:hover {
+  cursor: pointer;
+  border-color: #DEEBFF;
 }
 
 .badge > i {
@@ -213,9 +223,159 @@ nav > ul {
   }
 }
 
+/* end section .search */
 
+/* start section .accommodation*/
 
+/*img l127 h134*/
 
+.accommodations {
+  margin-top: 2rem;
+}
 
+.accommodations-wrapper__popular {
+  background-color: #F2F2F2;
+  padding-bottom: 2rem;
+}
+
+.accommodation-title {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  padding-top: 1.5rem;
+}
+
+.fa-chart-line {
+  display: flex;
+  margin: auto 0;
+  font-size: 1.5rem;
+}
+
+.accommodations-wrapper__popular-items {
+
+}
+
+.popular-item {
+  display: flex;
+  max-width: 337px;
+  margin: auto auto 10px;
+  background-color: white;
+  border: 5px solid white;
+  border-radius: 30px;
+}
+
+.popular-item:last-child {
+  margin-bottom: 2rem;
+}
+
+.popular-item__img {
+  display: flex;
+}
+
+.popular-item__img img {
+  height: 134px;
+  width: 127px;
+  object-fit: cover;
+  border-radius: 25px 0 0 25px;
+}
+
+.popular-item__infos {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+}
+
+.popular-item__title {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.popular-item__price {
+  font-size: 13px;
+}
+
+.popular-item__rating {
+  margin-top: 2rem;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.rate:not(:checked) > label:before {
+  content: '★ ';
+}
+
+.rate label {
+  width: 9px;
+  display: inline-block;
+}
+
+/* activités */
+
+.accommodations-wrapper__city {
+  background-color: #F6F6F6;
+}
+
+.accommodations-wrapper__city-items {
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.city-item {
+  display: flex;
+  flex-direction: column;
+  max-width: 337px;
+  margin: auto auto 10px;
+  border: 5px solid white;
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.city-item__img {
+
+}
+
+.city-item__img img {
+  height: 114px;
+  width: 337px;
+  object-fit: cover;
+}
+
+.city-item__infos {
+  background-color: white;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  padding-left: 15px;
+}
+
+.city-item__title {
+  font-weight: bold;
+}
+
+.city-item__price {
+  font-size: 13px;
+}
+
+.btn-wrapper {
+  width: 90%;
+  display: flex;
+  margin: 20px auto;
+}
+.btn {
+  border: none;
+  font-weight: bold;
+  font-size: 22px;
+  font-family: 'Raleway', sans-serif;
+  padding: 0;
+  /*display: flex;*/
+  /*width: ;*/
+  /*margin: auto auto auto 10%;*/
+  /*text-align: left;*/
+}
 
 
