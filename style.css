@@ -13,6 +13,20 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+/*Visibility*/
+@media screen and (max-width: 767px){
+  .hide-for-mobile {
+    display: none !important;
+  }
+
+}
+
+@media screen and (min-width: 768px){
+  .hide-for-tablet-up {
+    display: none !important;
+  }
+}
+
 a {
   text-decoration: none;
   color: black;
@@ -73,6 +87,7 @@ nav > ul {
 
 /* end header */
 
+
 /* start section .search */
 
 .search {
@@ -92,7 +107,7 @@ nav > ul {
   width: 90%;
   height: 49px;
   margin-left: 5%;
-  border: 1px solid #f0f0f0;
+  border: 1px solid #F2F2F2;
   border-right: none;
   border-left: none;
   padding-left: 3.75rem;
@@ -108,7 +123,7 @@ nav > ul {
   position: absolute;
   left: 0;
   font-size: 1.125rem;
-  background-color: #f0f0f0;
+  background-color: #F2F2F2;
   padding: 16px 20px;
   border-radius: 10px 0 0 10px;
 }
@@ -118,7 +133,89 @@ nav > ul {
   right: 0;
   font-size: 1.125rem;
   background-color: #0065FC;
-  padding: 16px;
+  color: white;
+  padding: 1rem;
   border-radius: 10px;
 }
+
+.search-field button {
+  background-color: #0065FC;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 16px 12px;
+  border-radius: 0 1rem 1rem 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.search-field button:hover {
+  cursor: pointer;
+  background-color: #DEEBFF;
+  color: black;
+}
+
+.filters {
+  font-weight: bold;
+}
+
+.filters-title {
+
+}
+
+.filters-badge {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.badge {
+  border: 2px solid #F2F2F2;
+  padding-right: 1.5rem;
+  border-radius: 2rem;
+  border-left: none;
+  margin: 5px 5px 5px 0;
+}
+
+.badge > i {
+  color: #0065FC;
+  background-color: #DEEBFF;
+  padding: 16px;
+  border-radius: 50%;
+}
+
+.badge:nth-child(2) > i {
+  padding-right: 20px;
+}
+
+.filters-information {
+  margin-top: 1rem;
+  font-weight: normal;
+  display: flex;
+}
+
+.badge-info {
+  color: #0065FC;
+}
+
+.badge-info > i {
+  padding: 4px 8px;
+  border: 2px solid #F2F2F2;
+  border-radius: 50%;
+  display: initial;
+}
+
+.filters-information__text {
+  margin-left: 0.5rem;
+}
+
+@media all and (min-width: 768px){
+  .search-field input {
+    width: 40%;
+  }
+}
+
+
+
+
+
+
 
