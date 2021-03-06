@@ -252,8 +252,23 @@ nav > ul {
   font-size: 1.5rem;
 }
 
-.accommodations-wrapper__popular-items {
+@media screen and (min-width: 1400px) {
 
+  .accommodation-title {
+    margin: 0 10px;
+  }
+
+  .accommodations-wrapper__city {
+    padding: 0 1.5rem;
+  }
+
+  .accommodations-wrapper__popular > .accommodation-title h3{
+    padding: 0 1.5rem;
+  }
+
+  .accommodations-wrapper__popular-items {
+    padding: 0 2rem;
+  }
 }
 
 .popular-item {
@@ -407,7 +422,7 @@ input[type="radio"] {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1400px) {
   .accommodations {
     display: flex;
     justify-content: start;
@@ -424,5 +439,127 @@ input[type="radio"] {
 /* section .activities */
 .activities {
   width: 90%;
-  margin: auto;
+  margin: 3rem auto;
+}
+
+.activities-wrapper {
+  width: 100%;
+}
+
+.activity-item {
+  max-width: 337px;
+  /*height: 190px;*/
+  border-radius: 25px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  box-shadow: 0 5px 5px #F3F3F3;
+}
+
+.activity-item__img {
+  height: 134px;
+  background-position: center 20%;
+  background-size: cover;
+}
+
+.activity-item__img img {
+  /*height: 134px;*/
+  /*width: 100%;*/
+  /*object-fit: cover;*/
+  /*height: 85%;*/
+}
+
+.activity-item__title {
+  padding-left: 15px;
+}
+
+.card1 > .activity-item__img {
+  background-image: url("./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg");
+}
+
+
+.card2 > .activity-item__img {
+  background-image: url("./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg");
+  background-position: center 42%;
+}
+
+
+.card3 > .activity-item__img {
+  background-image: url("./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg");
+}
+
+
+.card4 > .activity-item__img {
+  background-image: url("./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg");
+  background-position: center 15%;
+}
+
+.card5 > .activity-item__img {
+  background-image: url("./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg");
+}
+
+.card6 > .activity-item__img {
+  background-image: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
+}
+
+@media screen and (min-width: 1400px){
+  .activities {
+    display: flex;
+    justify-content: start;
+    margin: 2rem auto;
+    width: 90%;
+    flex-direction: column;
+  }
+
+  .activities-wrapper {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    height: 446px;
+  }
+
+  .activity-item {
+    display: flex;
+    flex-direction: column;
+    width: 306px;
+    margin: 0 23px 0 0;
+  }
+
+  .activity-item__title {
+    height: auto;
+  }
+
+  .card1 {
+    height: 100%;
+  }
+  .card2 {
+    height: 53.36%;
+    margin-bottom: auto;
+  }
+  .card3 {
+    height: 37%;
+    margin-bottom: 0;
+  }
+  .card4 {
+    height: 100%;
+  }
+  .card5 {
+    height: 43.50%;
+    margin-bottom: auto;
+  }
+  .card6 {
+    height: 47.08%;
+    margin-bottom: 0;
+  }
+
+  .activity-item__img {
+    height: 100%;
+    width: unset;
+  }
+
+  .card1 .activity-item__img img {
+    height: 388px;
+  }
+  /*.card4 .activity-item__img img {*/
+  /*  height: 388px;*/
+  /*}*/
 }
