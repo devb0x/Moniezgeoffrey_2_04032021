@@ -219,7 +219,8 @@ nav > ul {
 
 @media all and (min-width: 768px){
   .search-field input {
-    width: 40%;
+    width: 234px;
+    padding-left: 2rem;
   }
 }
 
@@ -443,10 +444,20 @@ input[type="radio"] {
 }
 
 .activities-wrapper {
-  width: 100%;
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1024px){
+  .activities-wrapper {
+    width: 100%;
+    margin: unset;
+  }
 }
 
 .activity-item {
+  display: block;
+  cursor: pointer;
   max-width: 337px;
   /*height: 190px;*/
   border-radius: 25px;
@@ -501,6 +512,26 @@ input[type="radio"] {
   background-image: url("./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg");
 }
 
+@media screen and (min-width: 768px){
+  .activities-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 2rem;
+  }
+
+  .activity-item {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  .activities-wrapper {
+    justify-content: space-around;
+  }
+}
+
 @media screen and (min-width: 1400px){
   .activities {
     display: flex;
@@ -515,6 +546,7 @@ input[type="radio"] {
     display: flex;
     flex-wrap: wrap;
     height: 446px;
+    margin-left: 0;
   }
 
   .activity-item {
@@ -559,7 +591,114 @@ input[type="radio"] {
   .card1 .activity-item__img img {
     height: 388px;
   }
-  /*.card4 .activity-item__img img {*/
-  /*  height: 388px;*/
-  /*}*/
+
+}
+
+/* end section .activities*/
+
+/* start footer */
+
+footer {
+  background-color: #F2F2F2;
+  padding: 2rem 0;
+}
+
+.footer-wrapper {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+@media screen and (max-width: 1024px){
+  .footer-wrapper {
+    flex-direction: column;
+  }
+
+  .footer__links > .col1 {
+    margin-right: 75px;
+  }
+
+  .footer__links > .col2 {
+    margin-right: 79px;
+  }
+}
+
+.footer__links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__links a {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1200px){
+  .col1 {
+    margin-right: 200px;
+  }
+
+  .col2 {
+    margin-right: 279px;
+  }
+}
+
+
+/* test header border*/
+@media screen and (max-width: 767px){
+
+  header {
+    width: 100%;
+  }
+
+  .logo {
+    margin-left: 5%;
+  }
+
+  .login {
+    margin-right: 5%;
+  }
+
+  ul {
+    text-align: center;
+  }
+
+  .test {
+    width: 50%;
+    border-bottom: 3px solid blue;
+    padding-bottom: 1rem;
+  }
+
+  .test2 {
+    width: 50%;
+    border-bottom: 3px solid #F2F2F2;
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px){
+  header {
+    padding-top: 0;
+  }
+
+  ul {
+    margin-top: 0;
+    text-align: center;
+  }
+
+  ul li {
+    width: 40%;
+  }
+
+  nav {
+    height: 70px;
+  }
+
+  .test {
+    border-top: 3px solid #0065FC;
+    padding-top: 23px;
+  }
+
+  .test2 {
+    padding-top: 26px;
+  }
 }

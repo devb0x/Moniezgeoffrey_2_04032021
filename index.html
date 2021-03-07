@@ -28,11 +28,11 @@
 
     <nav>
       <ul>
-        <li>
-          <a href="#" class="blue">Hébergements</a>
+        <li class="test">
+          <a href="#accommodations" class="blue test">Hébergements</a>
         </li>
-        <li>
-          <a href="#">Activités</a>
+        <li class="test2">
+          <a href="#activities" class="test2">Activités</a>
         </li>
       </ul>
     </nav>
@@ -55,8 +55,8 @@
         <i class="fas fa-map-marker-alt" tabindex="0"></i>
         <input id="city" type="search">
         <i class="fas fa-search hide-for-tablet-up" tabindex="0"></i>
-        <button class="hide-for-mobile">Rechercher</button>
       </label>
+      <button class="hide-for-mobile">Rechercher</button>
     </div>
 
     <div class="filters">
@@ -102,7 +102,7 @@
 
   </section>
 
-  <section class="accommodations">
+  <section class="accommodations" id="accommodations">
 
     <div class="accommodations-wrapper__popular">
 
@@ -458,7 +458,7 @@
 
   </section>
 
-  <section class="activities">
+  <section class="activities" id="activities">
 
     <div class="activities-title">
       <h3>Activités à Marseille</h3>
@@ -466,63 +466,90 @@
 
     <div class="activities-wrapper">
 
-      <div class="activity-item card1">
+      <a class="activity-item card1">
         <div class="activity-item__img">
 <!--          <img src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">-->
         </div>
         <div class="activity-item__title">
           <h4>Vieux Port</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="activity-item card2">
+      <a class="activity-item card2">
         <div class="activity-item__img">
 <!--          <img src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues">-->
         </div>
         <div class="activity-item__title">
           <h4>Fort de Pomègues</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="activity-item card3">
+      <a class="activity-item card3">
         <div class="activity-item__img">
 <!--          <img src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul">-->
         </div>
         <div class="activity-item__title">
           <h4>Îles du Frioul</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="activity-item card4">
+      <a class="activity-item card4">
         <div class="activity-item__img">
 <!--          <img src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">-->
         </div>
         <div class="activity-item__title">
           <h4>Parc National des Calanques</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="activity-item card5">
+      <a class="activity-item card5">
         <div class="activity-item__img">
 <!--          <img src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde">-->
         </div>
         <div class="activity-item__title">
           <h4>Notre-Dame-de-la-Garde</h4>
         </div>
-      </div>
+      </a>
 
-      <div class="activity-item card6">
+      <a class="activity-item card6">
         <div class="activity-item__img">
 <!--          <img src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp">-->
         </div>
         <div class="activity-item__title">
           <h4>Parc Longchamp</h4>
         </div>
-      </div>
+      </a>
 
     </div>
 
   </section>
+
+  <footer>
+
+    <div class="footer-wrapper">
+
+      <div class="footer__links col1">
+        <h3>A propos</h3>
+        <a href="#">Fonctionnement du site</a>
+        <a href="#">Conditions générales de vente</a>
+        <a href="#">Données et confidentialité</a>
+      </div>
+
+      <div class="footer__links col2">
+        <h3>Nos hébergements</h3>
+        <a href="#">Charte qualité</a>
+        <a href="#">Soumettre votre hôtel</a>
+      </div>
+
+      <div class="footer__links col3">
+        <h3>Assistance</h3>
+        <a href="#">Centre d'aide</a>
+        <a href="#">Nous contacter</a>
+      </div>
+      
+    </div>
+
+  </footer>
 
 </body>
 </html>
