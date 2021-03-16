@@ -247,7 +247,7 @@ nav > ul {
 
 .badge:hover {
   cursor: pointer;
-  border-color: #DEEBFF;
+  border-color: #0065FC;
 }
 
 .badge > i {
