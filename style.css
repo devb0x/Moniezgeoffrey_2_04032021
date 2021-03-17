@@ -228,7 +228,7 @@ nav > ul {
 }
 
 .filters-title {
-
+  margin: auto 2rem auto 0;
 }
 
 .filters-badge {
@@ -300,10 +300,15 @@ nav > ul {
 
   .search-field input {
     width: 234px;
-    padding-left: 2rem;
+    padding-left: 1.8rem;
   }
 }
 
+@media all and (min-width: 1200px) {
+  .search-field input {
+    padding-left: 0.5rem;
+  }
+}
 /* END SECTION .SEARCH */
 /* START SECTION .ACCOMMODATIONS */
 
