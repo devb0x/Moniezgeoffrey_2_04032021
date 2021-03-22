@@ -225,6 +225,7 @@ nav > ul {
 
 .filters {
   font-weight: bold;
+  margin-top: 1rem;
 }
 
 .filters-title {
@@ -286,7 +287,6 @@ nav > ul {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin-top: 1rem;
   }
 
   .filters-title {
