@@ -238,6 +238,7 @@ nav > ul {
 }
 
 .badge {
+  font-weight: bold;
   border: 2px solid #F2F2F2;
   padding-right: 1.5rem;
   border-radius: 2rem;
@@ -251,10 +252,12 @@ nav > ul {
 }
 
 .badge > i {
-  color: #0065FC;
-  background-color: #DEEBFF;
   padding: 16px;
   border-radius: 50%;
+  margin-right: 0.5rem;
+  margin-left: -6px;
+  color: #0065FC;
+  background-color: #DEEBFF;
 }
 
 .badge:nth-child(2) > i {
