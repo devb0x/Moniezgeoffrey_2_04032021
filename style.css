@@ -173,7 +173,6 @@ nav > ul {
 }
 
 .search-field input {
-  width: 90%;
   height: 49px;
   margin-left: 5%;
   border: 1px solid #F2F2F2;
@@ -221,6 +220,26 @@ nav > ul {
   cursor: pointer;
   background-color: #DEEBFF;
   color: black;
+}
+
+/*.search-field .btn-search {*/
+/*  width: auto;*/
+/*  height: auto;*/
+/*}*/
+
+
+.btn-search:after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f002";
+}
+
+@media (min-width: 600px) {
+  .btn-search:after {
+    font-family: inherit;
+    font-weight: bold;
+    content: "Rechercher";
+  }
 }
 
 .filters {
