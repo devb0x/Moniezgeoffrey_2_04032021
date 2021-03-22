@@ -174,11 +174,11 @@ nav > ul {
 
 .search-field input {
   height: 49px;
-  margin-left: 5%;
+  padding: 0 0 0 0.5rem;
+  margin-left: -4px;
   border: 1px solid #F2F2F2;
   border-right: none;
   border-left: none;
-  padding-left: 3.75rem;
   font-size: 1rem;
   font-weight: bold;
 }
@@ -187,33 +187,15 @@ nav > ul {
   outline: none;
 }
 
-.fa-map-marker-alt {
-  position: absolute;
-  left: 0;
-  font-size: 1.125rem;
-  background-color: #F2F2F2;
-  padding: 16px 20px;
-  border-radius: 10px 0 0 10px;
-}
-
-.fa-search {
-  position: absolute;
-  right: 0;
-  font-size: 1.125rem;
-  background-color: #0065FC;
-  color: white;
-  padding: 1rem;
-  border-radius: 10px;
-}
-
 .search-field button {
   background-color: #0065FC;
   color: white;
   font-weight: bold;
   border: none;
-  padding: 16px 12px;
+  padding: 16px 18px;
   border-radius: 0 1rem 1rem 0;
   transition: all 0.4s ease-in-out;
+  margin-left: -5px;
 }
 
 .search-field button:hover {
@@ -222,16 +204,21 @@ nav > ul {
   color: black;
 }
 
-/*.search-field .btn-search {*/
-/*  width: auto;*/
-/*  height: auto;*/
-/*}*/
-
+label:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f3c5"; /* location icon */
+  height: auto;
+  width: auto;
+  background-color: #F2F2F2;
+  padding: 16px 18px;
+  border-radius: 1rem 0 0 1rem;
+}
 
 .btn-search:after {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f002";
+  content: "\f002"; /* search icon */
 }
 
 @media (min-width: 600px) {
@@ -319,17 +306,8 @@ nav > ul {
     flex-basis: 100%;
   }
 
-  .search-field input {
-    width: 234px;
-    padding-left: 1.8rem;
-  }
 }
 
-@media all and (min-width: 1200px) {
-  .search-field input {
-    padding-left: 0.5rem;
-  }
-}
 /* END SECTION .SEARCH */
 /* START SECTION .ACCOMMODATIONS */
 
