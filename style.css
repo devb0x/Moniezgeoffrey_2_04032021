@@ -167,10 +167,6 @@ nav > ul {
   font-size: 1.375rem;
 }
 
-.search-field {
-  position: relative;
-}
-
 .search-field input {
   height: 49px;
   padding: 0 0 0 0.5rem;
@@ -207,8 +203,8 @@ label:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f3c5"; /* location icon */
-  height: auto;
-  width: auto;
+  /*height: auto;*/
+  /*width: auto;*/
   background-color: #F2F2F2;
   padding: 16px 18px;
   border-radius: 1rem 0 0 1rem;
@@ -360,6 +356,7 @@ label:before {
   background-color: white;
   border: 5px solid white;
   border-radius: 30px;
+  box-shadow: 0 5px 5px #E3E3E3;
 }
 
 .popular-item:last-child {
@@ -441,7 +438,7 @@ label:before {
 }
 
 .accommodations-wrapper__city-items {
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
 }
 
@@ -453,7 +450,7 @@ label:before {
   border: 5px solid white;
   border-radius: 30px;
   overflow: hidden;
-  box-shadow: 0 5px 5px #F3F3F3;
+  box-shadow: 0 5px 5px #E3E3E3;
 }
 
 .city-item__img {
@@ -569,7 +566,7 @@ label:before {
   border-radius: 25px;
   margin: 0 auto 2rem;
   overflow: hidden;
-  box-shadow: 0 5px 5px #F3F3F3;
+  box-shadow: 0 5px 5px #E3E3E3;
 }
 
 .activity-item__img img {
