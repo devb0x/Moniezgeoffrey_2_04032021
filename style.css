@@ -244,6 +244,7 @@ label:before {
 }
 
 .badge {
+  background-color: transparent;
   font-weight: bold;
   border: 2px solid #F2F2F2;
   padding-right: 1.5rem;
