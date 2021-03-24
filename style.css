@@ -13,19 +13,6 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-/*Visibility*/
-@media screen and (max-width: 767px){
-  .hide-for-mobile {
-    display: none !important;
-  }
-}
-
-@media screen and (min-width: 768px){
-  .hide-for-tablet-up {
-    display: none !important;
-  }
-}
-
 a {
   text-decoration: none;
   color: black;
