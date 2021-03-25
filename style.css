@@ -64,6 +64,10 @@ nav > ul {
   font-weight: 600;
 }
 
+h2 {
+  font-size: 1.375rem;
+}
+
 @media all and (min-width: 768px){
   nav {
     order: 1;
@@ -327,7 +331,7 @@ label:before {
     padding: 0 1.5rem;
   }
 
-  .accommodations-wrapper__popular > .accommodation-title h3{
+  .accommodations-wrapper__popular > .accommodation-title h2 {
     padding: 0 1.5rem;
   }
 
